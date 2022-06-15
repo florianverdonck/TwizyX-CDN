@@ -27,6 +27,8 @@ function initializeWeglot() {
     let currentLang = Weglot.getCurrentLang();
 
     /*
+
+    //TEST NORELEASE
     CRISP_RUNTIME_CONFIG = {
       locale : currentLang
     };
