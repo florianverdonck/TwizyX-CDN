@@ -1,0 +1,83 @@
+html {
+    background-color: #181a1c;
+}
+
+/************************/
+/* WP Blog article copy */
+/************************/
+
+div.entry-content * {
+    color: white;
+}
+
+div.entry-content h1,
+div.entry-content h2,
+div.entry-content h3,
+div.entry-content h4,
+div.entry-content h5 {
+    color: #ffce1a;
+    margin: 40px 0px;
+}
+
+div.entry-content a {
+    color: #ffce1a;
+    text-decoration: underline;
+}
+
+/************************/
+/*  Fixing product FAQ  */
+/************************/
+
+#product-faq .js-list-item {
+    border-top: 2px solid #FFCE1A !important;
+}
+
+/****************************************/
+/*  Customize Weglot language selector  */
+/****************************************/
+
+.wg-drop.country-selector .wgcurrent:after {
+    display:none !important;
+}
+
+.wg-drop.country-selector .wgcurrent a {
+    padding-right: 0px !important;
+}
+
+.wg-drop.country-selector {
+    border-radius: 100px;
+    background-color: transparent !important;
+    padding: 0px !important;
+}
+
+.wg-drop.country-selector .wgcurrent {
+    border-radius: 100px !important;
+    border: 2px solid #FFCE1A !important;
+    padding: 5px !important;
+}
+
+.wg-drop.country-selector ul {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+li.wg-li img.wg-flag {
+    margin-right: 0px !important;
+}
+
+li.wg-li a {
+    padding: 0px !important;
+    margin: 0px auto;
+}
+
+/********************/
+/*  Custom helpers  */
+/********************/
+
+.text-accent {
+    color: #ffc107;
+}
+
+.text-accent:visited {
+    color: #ffc107;
+} 
