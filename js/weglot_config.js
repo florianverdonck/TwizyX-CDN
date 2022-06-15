@@ -26,12 +26,13 @@ function initializeWeglot() {
 
     let currentLang = Weglot.getCurrentLang();
 
+    /*
     CRISP_RUNTIME_CONFIG = {
       locale : currentLang
     };
 
     window.$crisp=[];window.CRISP_WEBSITE_ID="313767f1-527d-4488-a1a8-17d41ad0f240";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-
+    */
   });
 
 }
