@@ -81,3 +81,39 @@ li.wg-li a {
 .text-accent:visited {
     color: #ffc107;
 } 
+
+/********************/
+/*    Order form    */
+/********************/
+
+.order-form-title {
+    color: #ffce1a
+}
+
+.order-form-container {
+    max-width: 600px;
+}
+
+#lead_email {
+    background-color: #252525;
+    border: 2px solid #ffce1a;
+    border-radius: 6px;
+    padding: 10px;
+    color: white !important;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+#lead_email::placeholder {
+    color: lightgrey;
+}
+
+#lead_submit {
+    padding: 10px 20px;
+    background-color:  #ffce1a;
+    border: solid 2px #ffce1a;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: 600;
+    color: black;
+}
