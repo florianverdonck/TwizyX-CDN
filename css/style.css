@@ -117,3 +117,50 @@ li.wg-li a {
     font-weight: 600;
     color: black;
 }
+
+/************************/
+/* Performances section */
+/************************/
+
+#performances {
+    color: white;
+    text-align: center;
+}
+
+.performance-label {
+    color: #FFCE1A;
+    font-weight: normal;
+    font-size: x-large;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #FFCE1A;
+    margin-bottom: 30px;
+}
+
+.initial-value {
+    font-size: x-large !important;
+    color: white !important;
+}
+
+.tuned-value {
+    display:block;
+    margin-left: 10px;
+    font-size: xx-large;
+    color: #FFCE1A;
+    font-weight: bold;
+}
+
+@media (min-width: 576px) { 
+    .tuned-value {
+        display:inline;
+    }
+}
+
+.text-accent {
+    color: #FFCE1A;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: x-large;
+}
