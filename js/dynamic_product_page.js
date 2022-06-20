@@ -1,14 +1,18 @@
 const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
-  });
+});
 
-  let modelInPath = params.model;
+let modelInPath = params.model;
 
 if (modelInPath) {
     localStorage.setItem("model", modelInPath);
 }
 
-let selectedModel = localStorage.getItem("model").toUpperCase();
+let selectedModel = localStorage.getItem("model");
+if (!selectedModel) selectedModel = "T45";
+
+selectedModel = selectedModel.toUpperCase();
+
 let modelName = "";
 switch (selectedModel) {
     case "T80":
@@ -89,30 +93,7 @@ switch (currentPage) {
         break;
 }
 
-/*
-let twizyYearVersionTranslation = Weglot.translate(
-    {
-    'words':[ { "t":1,"w": twizyYearName } ],
-    'languageTo': Weglot.getCurrentLang()
-    }
-);
-
-twizyYearVersionTranslation.then(
-    function(data) {
-        console.log(data);
-        twizyYearName = data[0];
-        replaceDynamicTags();
-    }
-);
-*/
-
-Weglot.on("languageChanged", function() {
-    
-    console.log("replaced");
-});
-
 replaceDynamicTags();
-
 
 function replaceDynamicTags() {
 
