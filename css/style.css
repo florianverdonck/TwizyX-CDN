@@ -164,3 +164,21 @@ li.wg-li a {
 .subtitle {
     font-size: x-large;
 }
+
+/**************************/
+/**** MOBILE MENU ********/
+/************************/
+
+@media only screen and (max-width: 992px) {
+        
+    div.buttons-section > a:nth-child(2) {
+        width: 68px;
+    }
+
+    .wg-flags a img.wg-flag {
+        height: 35px;
+        margin-right: 0;
+        width: 35px;
+        margin-top: 12px;
+    }
+}
