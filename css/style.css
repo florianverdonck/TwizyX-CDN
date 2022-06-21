@@ -181,4 +181,8 @@ li.wg-li a {
         width: 35px;
         margin-top: 12px;
     }
+
+    #header .buttons-section a {
+        margin-right: 0px !important;
+    }
 }
