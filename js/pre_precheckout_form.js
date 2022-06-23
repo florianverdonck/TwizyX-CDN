@@ -5,4 +5,8 @@ $(document).ready(function () {
         $("#lead_submit").prop("value", "Chargement en cours...");
         $(".loading-before-checkout").removeClass("d-none");
     });
+
+    let floatingArrow = '<div><i class="fas fa-arrow-down fa-3x floating mt-3"></i></div>';
+
+    $(".pricingWrapper").append(floatingArrow);
 });
