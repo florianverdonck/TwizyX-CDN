@@ -8,5 +8,5 @@ $(document).ready(function () {
 
     let floatingArrow = '<div><i class="fas fa-arrow-down fa-3x floating mt-3"></i></div>';
 
-    $(".pricingWrapper").append(floatingArrow);
+    $(".pricingWrapper").float(floatingArrow);
 });
