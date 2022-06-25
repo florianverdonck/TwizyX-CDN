@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(".loading-before-checkout").removeClass("d-none");
     });
 
-    let floatingArrow = '<div><i class="fas fa-arrow-down fa-3x floating mt-3"></i></div>';
+    let floatingArrow = '<div><a href="#order-form"><i class="fas fa-arrow-down fa-3x floating mt-3"></i></a></div>';
 
     $(".pricingWrapper").after(floatingArrow);
 });
