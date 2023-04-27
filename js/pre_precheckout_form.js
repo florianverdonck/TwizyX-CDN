@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    let model = getVehicleDetail("year");
-    let year = getVehicleDetail("model");
+    let model = getVehicleDetail("model");
+    let year = getVehicleDetail("year");
     let price = getPrice(model, year);
 
     $("#order-checkout-form").on("submit", function (e) {
