@@ -10,21 +10,20 @@ $(document).ready(function () {
         // Check which button was clicked and update hidden field
         if (this.id === "pay_split") {
             $("#lead_pay_split").prop("value", true);
-        } else {
-            $("#lead_pay_split").prop("value", '');
         }
+
+        console.log("submitted");
+        $("#" + this.id).addClass("disabled");
+        $("#" + this.id).prop("value", "Chargement en cours...");
+        $(".loading-before-checkout").removeClass("d-none");
+        $("#lead_model").prop("value", model);
+        $("#lead_language").prop("value", Weglot.getCurrentLang());
 
         // Submit the form manually
         $("#order-checkout-form").submit();
     });
 
     $("#order-checkout-form").on("submit", function (e) {
-        console.log("submitted");
-        $("#lead_submit").addClass("disabled");
-        $("#lead_submit").prop("value", "Chargement en cours...");
-        $(".loading-before-checkout").removeClass("d-none");
-        $("#lead_model").prop("value", model);
-        $("#lead_language").prop("value", Weglot.getCurrentLang());
 
         fbq('track', 'AddToCart', {
             value: price,
