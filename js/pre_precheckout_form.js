@@ -4,6 +4,20 @@ $(document).ready(function () {
     let year = getVehicleDetail("year");
     let price = getPrice(model, year);
 
+    $("#lead_submit, #pay_split").on("click", function (e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Check which button was clicked and update hidden field
+        if (this.id === "pay_split") {
+            $("#lead_pay_split").prop("value", true);
+        } else {
+            $("#lead_pay_split").prop("value", '');
+        }
+
+        // Submit the form manually
+        $("#order-checkout-form").submit();
+    });
+
     $("#order-checkout-form").on("submit", function (e) {
         console.log("submitted");
         $("#lead_submit").addClass("disabled");

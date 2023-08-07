@@ -104,11 +104,11 @@ li.wg-li a {
   margin-bottom: 20px;
 }
 
-#lead_email::placeholder {
+#lead_email::placeholder, #pay_split::placeholder {
   color: lightgrey;
 }
 
-#lead_submit {
+#lead_submit, #pay_split {
   padding: 10px 20px;
   background-color: #ffce1a;
   border: solid 2px #ffce1a;
@@ -117,6 +117,8 @@ li.wg-li a {
   font-weight: 600;
   color: black;
 }
+
+
 
 /************************/
 /* Performances section */
