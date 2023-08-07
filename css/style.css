@@ -270,7 +270,7 @@ li.wg-li a {
   content: none;
 }
 
-#lead_submit.disabled {
+#lead_submit.disabled, #pay_split.disabled {
   background-color: #d5ac18;
 }
 
