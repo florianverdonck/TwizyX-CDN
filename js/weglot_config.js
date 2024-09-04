@@ -15,7 +15,7 @@ function initializeWeglot() {
         },
         // Move switcher somewhere in the page
         location: {
-          target: ".weglot-language-btn",
+          target: 'div[data-weglot-target="weglot_here"]',
           sibling: null,
         },
       },
